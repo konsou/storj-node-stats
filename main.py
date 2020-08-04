@@ -26,7 +26,7 @@ def get_satellite_info(satellite_id: str) -> Dict:
 
 if __name__ == '__main__':
     satellites = get_satellites()
-    print(f"Stats for {NODE_FULL_ADDRESS}\n")
+    print(f"Audit stats for {NODE_FULL_ADDRESS}\n")
     for satellite in satellites:
         print(satellite['url'])
         audits = get_satellite_info(satellite['id'])['audit']
